@@ -11,7 +11,7 @@
 \usepackage{float} % Allow you to use [H] specifier to force the position of the images 
 \usepackage{capt-of} % Defines a command \captionof for putting a caption to something that’s not a float.
 \usepackage{sidecap} % Defines environments called SCfigure and SCtable (analogous to figure and table) to typeset captions sideways
-	\sidecaptionvpos{figure}{c} % Alignment
+\sidecaptionvpos{figure}{c} % Alignment
 \usepackage{caption} % to customize the captions in floating environments like figure and table
 \usepackage{commath} % Mathematics typesetting support
 \usepackage{cancel} % Place lines through maths formulae
@@ -157,6 +157,10 @@ backgroundcolor=\color{white},
 \definecolor{dkgreen}{rgb}{0,0.6,0} % Color for using code
 \definecolor{gray}{rgb}{0.5,0.5,0.5} 
 % Language to use
+\usepackage[spanish]{babel}
+%\renewcommand{\thechapter}{\Roman{chapter}}
+
+
 
 \title{Degree project}
 
@@ -179,7 +183,7 @@ backgroundcolor=\color{white},
 \vspace*{0.75cm}
 {\mysubtitlesize{\textbf{Master of Science in Data Science}}}\\
 \vspace*{1.75cm}
-{\mymaintitlesize{\textbf{TÍTULO: XXXXXX}}\\
+{\mymaintitlesize{\textbf{TÍTULO: XXXXXXX}}\\
 \vspace*{0.75cm}
 Trabajo de integración curricular presentado como requisito para la obtención del título de XXXXXX}\\
 \vspace*{1.75cm}
@@ -189,9 +193,9 @@ Apellidos y Nombre\\
 \vspace*{0.75cm}
 \textbf{Tutor/a:}\\
 \vspace*{0.5cm}
-Título Académico - Apellidos y Nombre\\
+MSDS - Sergio Castillo\\
 \vspace*{1.75cm}
-Urcuquí, mes y año}}
+Santiago, mes y año}}
 
 \end{center}
 \pagenumbering{gobble}
@@ -230,8 +234,8 @@ Urcuquí, mes y año}}
 % \listoftables
 % \listoffigures
 
-
-
+%Indice
+%\tableofcontents
 
 \mainmatter
 
@@ -241,25 +245,25 @@ Urcuquí, mes y año}}
 \label{chap:intro}
 \input{chapters/introduction.tex}
 
-\chapter{Theoretical Framework}
-\label{chap:theory}
-\input{chapters/fundamentals.tex}
+%\chapter{Theoretical Framework}
+%\label{chap:theory}
+%\input{chapters/fundamentals.tex}
 
-\chapter{State of the Art}
-\label{chap:state_of_art}
-\input{chapters/state_of_art.tex}
+%\chapter{State of the Art}
+%\label{chap:state_of_art}
+%\input{chapters/state_of_art.tex}
 
 %\chapter{Problem Setting}
 %label{chap:problem_setting}
 %\input{chapters/problem_setting.tex}
 
-\chapter{Methodology}
-\label{chap:methods}
-\input{chapters/metodology.tex}
+%\chapter{Methodology}
+%\label{chap:methods}
+%\input{chapters/metodology.tex}
 
-\chapter{Results and Discussion}
-\label{chap:results}
-\input{chapters/results.tex}
+%\chapter{Results and Discussion}
+%\label{chap:results}
+%\input{chapters/results.tex}
 
 
 %\chapter{Discussion}
@@ -267,11 +271,12 @@ Urcuquí, mes y año}}
 %\input{chapters/discussion.tex}
 
 
-\chapter{Conclusions}
-\label{chap:conclusions}
-\input{chapters/conclusions.tex}
+%\chapter{Conclusions}
+%\label{chap:conclusions}
+%\input{chapters/conclusions.tex}
 
 
+\newpage
 
 
 %%%%%%% Bibliography %%%%%%%%
@@ -279,12 +284,13 @@ Urcuquí, mes y año}}
 \bibliography{bib/IEEEreferences} 
 %%%%%%% Bibliography %%%%%%%%    
 
-\appendix  
+% \appendix  
+\newpage
 \clearpage % o \cleardoublepage
-\addappheadtotoc 
-\appendixpage 
+% \addappheadtotoc 
+% \appendixpage 
 
-\input{chapters/appendix.tex}
+% \input{chapters/appendix.tex}
 
 
 
